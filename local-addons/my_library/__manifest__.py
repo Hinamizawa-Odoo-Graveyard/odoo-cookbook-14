@@ -11,6 +11,6 @@
     'category': 'Training',
     'version': '14.0.0',
     'depends': ['base'],
-    'data': ['views/views.xml'],
-    'demo': ['demo.xml'],
+    'data': [],
+    'demo': [],
 }
