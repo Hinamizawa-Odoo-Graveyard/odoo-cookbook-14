@@ -10,13 +10,14 @@
     'category': 'Profile Management',
     'company': 'SMART-OBC',
     'website': 'https://github.com/alejandroatacho',
-    'category': 'Uncategorized',
+    'category': 'Tools',
     'version': '14.0.1',
     'depends': ['base'],
-    'views': [
-
-    ],
-    'demo': [
-
-    ],
+    # 'data': [
+    #     'views.xml'
+    # ],
+    # This demo data files will be loaded if db initialize with demo data (commented because file is not added in this example)
+    # 'demo': [
+    #     'demo.xml'
+    # ],
 }
