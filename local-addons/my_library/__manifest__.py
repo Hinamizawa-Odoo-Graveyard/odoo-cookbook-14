@@ -9,4 +9,7 @@
     'category': 'Profile Management',
     'company': 'SMART-OBC',
     'website': 'https://github.com/alejandroatacho',
+    'category': 'Uncategorized',
+    'version': '14.0.1',
+    'depends': ['base'],
 }
