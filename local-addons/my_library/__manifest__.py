@@ -9,8 +9,4 @@
     'author': "Hinamizawa",
     'website': "https://github.com/alejandroatacho",
     'category': 'Training',
-    'version': '14.0.0',
-    'depends': ['base'],
-    'data': [],
-    'demo': [],
 }
