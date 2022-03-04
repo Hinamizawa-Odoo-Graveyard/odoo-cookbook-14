@@ -12,6 +12,7 @@
     'website': 'https://github.com/alejandroatacho',
     'category': 'Tools',
     'version': '14.0.1.0',
+    'sequence': '-100',
     'depends': ['base'],
     'data': [
         'security/groups.xml',
