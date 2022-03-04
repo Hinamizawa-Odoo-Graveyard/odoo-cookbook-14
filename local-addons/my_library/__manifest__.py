@@ -11,7 +11,7 @@
     'company': 'SMART-OBC',
     'website': 'https://github.com/alejandroatacho',
     'category': 'Tools',
-    'version': '14.0.1',
+    'version': '14.0.1.0',
     'depends': ['base'],
     # 'data': [
     #     'views.xml'
