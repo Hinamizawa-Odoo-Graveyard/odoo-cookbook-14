@@ -13,11 +13,14 @@
     'category': 'Tools',
     'version': '14.0.1.0',
     'depends': ['base'],
-    # 'data': [
-    #     'views.xml'
-    # ],
+    'data': [
+        #     'views.xml'
+    ],
     # This demo data files will be loaded if db initialize with demo data (commented because file is not added in this example)
-    # 'demo': [
-    #     'demo.xml'
-    # ],
+    'demo': [
+        # 'demo.xml'
+    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
 }
