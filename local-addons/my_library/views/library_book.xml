@@ -7,7 +7,7 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem name="My Library" id="library_base_menu" web_icon="your_module, ../static/description/img/applogo.png" />
+    <menuitem name="My Library" id="library_base_menu" web_icon="your_module, chmod 755 static/description/img/applogo.png" />
     <menuitem name="Books" id="library_book_menu" parent="library_base_menu" action="library_book_action" />
 
     <!-- Form View -->
