@@ -14,6 +14,7 @@
     'version': '14.0.1.0',
     'sequence': '-100',
     'depends': ['base'],
+    'images': 'static/description/applogo.png',
     'data': [
         'security/groups.xml',
         'security/ir.model.access.csv',
