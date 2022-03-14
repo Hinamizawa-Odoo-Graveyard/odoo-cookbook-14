@@ -48,7 +48,6 @@
             <tree>
                 <field name="name" />
                 <field name="authors_ids" />
-                <field name="date_release" />
             </tree>
         </field>
     </record>
