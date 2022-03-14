@@ -5,6 +5,8 @@ from odoo import models, fields
 class LibraryBook(models.Model):
     _name = 'library.book'
     _description = 'Library Book'
+    cost_price = fields.Float(
+        'Book Cost', digits='Book Price')
 
     _order = 'date_release desc, name'
 
