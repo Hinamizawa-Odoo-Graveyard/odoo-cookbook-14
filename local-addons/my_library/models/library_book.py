@@ -5,8 +5,6 @@ from odoo import models, fields
 class LibraryBook(models.Model):
     _name = 'library.book'
     _description = 'Library Book'
-    cost_price = fields.Float(
-        'Book Cost', digits='Book Price')
 
     _order = 'date_release desc, name'
 
@@ -32,6 +30,8 @@ class LibraryBook(models.Model):
         digits=(14, 4),  # Optional precision (total, decimals),
     )
     author_ids = fields.Many2many('res.partner', string='Authors')
+    cost_price = fields.Float(
+        'Book Cost', digits='Book Price')
 
     def name_get(self):
         """ This method used to customize display name of the record """
