@@ -36,11 +36,11 @@ class LibraryBook(models.Model):
     # optional attribute: currency_field='currency_id' incase currency field have another name then 'currency_id'
     retail_price = fields.Monetary('Retail Price')
 
-
     def name_get(self):
         """ This method used to customize display name of the record """
         result = []
         for record in self:
-            rec_name = "%s (%s)" % (record.name, record.date_release)
+            rec_name = "%s %s (%s)" % (
+                record.name, record.author, record.date_release)
             result.append((record.id, rec_name))
         return result
