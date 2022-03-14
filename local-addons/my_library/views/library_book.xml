@@ -49,7 +49,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name" />
-                <field name="authors_ids" />
+                <field name="date_release" />
             </tree>
         </field>
     </record>
