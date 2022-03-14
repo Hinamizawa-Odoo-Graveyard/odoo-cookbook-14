@@ -32,6 +32,10 @@ class LibraryBook(models.Model):
     author_ids = fields.Many2many('res.partner', string='Authors')
     cost_price = fields.Float(
         'Book Cost', digits='Book Price')
+    currency_id = fields.Many2one('res.currency', string='Currency')
+    # optional attribute: currency_field='currency_id' incase currency field have another name then 'currency_id'
+    retail_price = fields.Monetary('Retail Price')
+
 
     def name_get(self):
         """ This method used to customize display name of the record """
