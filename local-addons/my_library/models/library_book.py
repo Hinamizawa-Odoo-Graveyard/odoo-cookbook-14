@@ -40,7 +40,6 @@ class LibraryBook(models.Model):
         """ This method used to customize display name of the record """
         result = []
         for record in self:
-            rec_name = "%s %s (%s)" % (
-                record.name, record.author, record.date_release)
+            rec_name = "%s (%s)" % (record.name, record.date_release)
             result.append((record.id, rec_name))
         return result
