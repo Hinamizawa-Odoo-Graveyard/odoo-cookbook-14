@@ -36,7 +36,14 @@ class LibraryBook(models.Model):
     # optional attribute: currency_field='currency_id' incase currency field have another name then 'currency_id'
     retail_price = fields.Monetary('Retail Price')
 
-    def name_get(self):
+    publisher_id = fields.Many2one('res.partner', string='Publisher',
+                                   # optional:
+                                   ondelete='set null',
+                                   context={},
+                                   domain=[],
+                                   )
+
+    def name_get(self):  # to be able to view data on the main page of the modules
         """ This method used to customize display name of the record """
         result = []
         for record in self:
@@ -44,3 +51,15 @@ class LibraryBook(models.Model):
                 record.name, record.date_release, record.author_ids)
             result.append((record.id, rec_name))
         return result
+
+
+class ResPartner(models.Model):
+    _inherit = 'res.partner'
+
+    published_book_ids = fields.One2many(
+        'library.book', 'publisher_id', string='Published Books')
+    authored_book_ids = fields.Many2many(
+        'library.book',
+        string='Authored Books',
+        # relation='library_book_res_partner_rel'  # optional
+    )
