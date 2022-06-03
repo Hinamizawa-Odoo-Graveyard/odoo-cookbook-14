@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields
+# test
 
 
 class LibraryBook(models.Model):
